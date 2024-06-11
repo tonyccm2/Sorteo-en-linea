@@ -4,7 +4,7 @@ import { usePersonsStore } from "../../store/Personas"
 export const ParticipantesPersonas = () => {
     const participants = usePersonsStore(state => state.participants)
     return (
-        <div className="mt-4 pt-2 pb-4  rounded-lg">
+        <div className="mt-4 pt-2 pb-4  rounded-lg w-full bg-[#3b3b3b] p-4">
             <p className="block text-gray-300 font-bold mb-1">Participantes:</p>
             {
                 participants?.map((name, index) => (
